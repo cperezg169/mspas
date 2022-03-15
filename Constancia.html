@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="es-es" xml:lang="es-es" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------------------------------------------------------Diseño Exportado de Internet---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!--------------------------------------------------------Funciones Exportado de Internet--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--------------------------------------------------------Modal------------------------------------------------------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+
+    <script src="Js/Censo_Constancia/Validation.js"></script>
+    <script type="text/javascript" src="https://wivuizuaecs87slvnlzmtw.on.drv.tw/Codigo%20JavaScript/Datos.js"></script>
+    <script src="Js/Censo_Constancia/jspdf.min.js"></script>
+    <script src="Js/Censo_Constancia/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    
+    <!--------------------------------------------------------Diseño Personal----------------------------------------------------------->
+    <link href="Css/Censo_Constancia/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>CONTANCIA | 2022</title>
+    
+</head>
+
+
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!--------------------------------------------------------Carga de La Pagina------------------------------------------------------> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<div class="loader"></div>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+            Swal.fire({
+            type: 'success',
+            titleText: 'Constancia de Recepción del Formulario Electrónico de Recopilación de Datos del Personal del Ministerio de Salud Pública Y Asistencia Social',
+            confirmButtonColor: '#20B2AA',
+            confirmButtonText: 'OK',
+            allowEscapeKey: true,
+            html: "<p></p> La impresión de esta constancia de recepción del formulario electrónico es <b>GRATUITO</b> no se encuentra sujeto al pago y/o retribución de cualquier clase a ningún servidor público, contratista, persona privada, pública, u organización de trabajadores."
+            }); 
+    });
+</script>
+
+<!--------------------------------------------------------Formulario Web------------------------------------------------------>
+
+
+
+<div id="content" class="content">
+    <div class="container mt-6">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-10">                
+                
+                <center>
+                    <div><img class="icon" src="https://i.ibb.co/Mn2jxnp/Imagen1-FINAL.jpg" style="width: 40%; height: 40%;"></div>
+                    <br>
+                </center>
+                
+                <form id="form" name="form" autocomplete="off">
+<pre></pre>
+
+                            <center>
+                                <h4 style="color: #2C3E50;"><b>Constancia de Recepción del Formulario Electrónico de Recopilación de Datos del Personal del Ministerio de Salud Pública Y Asistencia Social</b></h4>
+                                <pre></pre>
+                            </center> 
+
+                            <hr></hr>
+                            <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+
+                            <pre></pre>  
+                            
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                                <label class="form-control-label">Documento<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                                <select class="custom-select browser-default & form-control"  data-style="btn-danger" id="Nacionalidad" name="Nacionalidad" onclick="audio.play();" onchange="seleccionado()">
+                                    <option value='' disabled selected>-</option>
+                                    <option value="DPI">DPI</option>
+                                    <option value="NIT">NIT</option>
+                                    <option value="PASAPORTE">PASAPORTE</option>
+                                </select>
+                                </div>
+                                </div>
+
+                                <div class="col">
+                                <div class="mb-3">
+                                    <div id="GUATE" style="display:none;"> 
+                                            <i class="fas fa-search form-control-feedback"></i>
+                                            <label class="form-control-label">Buscar<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                                            <input class="form-control" placeholder="Ingresar DPI" type="tel" id='opciones1' onclick="audio.play();" onchange='cambioOpciones1();'/>
+                                    </div> 
+
+
+                                    <div id="EXTRANDOM" style="display:none;">
+                                            <i class="fas fa-search form-control-feedback"></i>
+                                            <label class="form-control-label">Buscar<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                                            <input onkeyup="mayus(this);"  class="form-control" placeholder="Ingresar NIT" type="text" id='opciones2' onclick="audio.play();" onchange='cambioOpciones2();'/>
+                                    </div>
+
+
+                                    <div id="EXTRAN" style="display:none;">
+                                            <i class="fas fa-search form-control-feedback"></i>
+                                            <label class="form-control-label">Buscar<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                                            <input onkeyup="mayus(this);"  class="form-control"  placeholder="Ingresar Pasaporte" type="text" id='opciones3' onclick="audio.play();" onchange='cambioOpciones3();'/>
+                                    </div>
+
+                                </div>
+                                </div>
+                                </div>
+
+                                
+                                <div style="text-align: center;">
+                                    <button type="button" onclick="audio.play() & myFunction() & validarSolo() & validate1(0);" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> BUSCAR</button>
+                                    <button type="reset" id="reset" onclick="audio.play() & myFunction2() & location.reload();" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> BORRAR</button>
+                                </div>
+
+                            <script>
+                                function myFunction() {
+                                    var x = document.getElementById("Consulta");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    }
+                                }
+                            </script>
+                                
+                            <script>
+                                function myFunction2() {
+                                    var x = document.getElementById("Consulta");
+                                    if (x.style.display === "block") {
+                                        x.style.display = "none";
+                                    }
+                                }
+                            </script>
+                                
+                                
+                                
+
+
+                                
+    
+<div id="Consulta" style="display:none;">
+
+    <div class="container" style="display:none; text-align: center;" id="myAlert">
+    </div> <p></p>
+
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-user-alt form-control-feedback"></i>
+                                <label class="form-control-label">Nombres<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>    
+                                <input class="form-control" readonly type='text' name="NOMBRES" id='nombre' placeholder="N/A" onblur="validate1(1);" />
+                                </div>
+                                </div>
+                                
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-user-alt form-control-feedback"></i>
+                                <label class="form-control-label">Apellidos<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>    
+                                <input class="form-control" readonly type='text' name='APELLIDOS' id='apellido' placeholder="N/A" onblur="validate1(2);"/>
+                                </div>
+                                </div>
+                                </div>
+
+
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-calendar form-control-feedback"></i>    
+                                <label class="form-control-label">Edad Actual<span style="color: rgb(0, 132, 255);"><b> *</b></span></label>
+                                <input type="text" readonly id="edad" name="Edad" placeholder="N/A" class="form-control" onblur="validate1(3);">
+                                </div>
+                                </div>
+
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-globe form-control-feedback"></i>
+                                <label class="form-control-label">Nacionalidad<span style="color: rgb(24, 169, 226);"><b> *</b></span></label> 
+                                <input type="text" readonly class="form-control" placeholder="N/A" id="nacionalidad" name="Nacionalidad" onblur="validate1(4);">
+                                </div>
+                                </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-address-card form-control-feedback"></i>
+                                <label class="form-control-label">Identificación<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>    
+                                <input class="form-control" readonly type='text' name="DPI" id="dpi" placeholder="N/A" onblur="validate1(5);" />
+                                </div>
+                                </div>
+
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-id-badge form-control-feedback"></i>
+                                <label class="form-control-label">NIT<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>    
+                                <input class="form-control" readonly type='text' name="NIT" id='nit' placeholder="N/A" onblur="validate1(6);"/>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-building form-control-feedback"></i>
+                                <label class="form-control-label">Unidad Ejecutora<span style="color: rgb(24, 169, 226);"><b> *</b></span></label> 
+                                <input type="text" readonly placeholder="N/A" id="unidadejecutora" name="Unidad_Ejecutora" class="form-control" onblur="validate1(7);">
+                                </div>
+                                </div>
+                                </div>
+            
+                                <div class="row">
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-users form-control-feedback"></i>
+                                <label class="form-control-label">Renglón<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>
+                                <input type="text" readonly name="Renglon" id="renglon" placeholder="N/A" class="form-control" onblur="validate1(8);">
+                                </div>
+                                </div> 
+                    
+                    
+                                <div class="col">
+                                <div class="mb-3">
+                                <i class="fas fa-briefcase form-control-feedback"></i>
+                                <label class="form-control-label">Tipo  de Servicio<span style="color: rgb(24, 169, 226);"><b> *</b></span></label>
+                                <input type="text" readonly class="form-control" id="tipservicio" placeholder="N/A" name="Tipo_Servicio" onblur="validate1(9);">
+                                </div>
+                                </div>
+                                </div>
+                                
+  <!--------------------------------------------------------ESTO NO CORRESPONDE--------------------------------------------------------------------->
+                    <div style="display:none;">
+                     <span class="d-block pb-2">Firma digital aqui</span>
+                    <div class="signature mb-2" style="width: 100%; height: 200px;">
+                        <canvas id="signature-canvas"
+                            style="border: 1px dashed red; width: 100%; height: 200px;"></canvas>
+                    </div>
+                    </div>
+  <!--------------------------------------------------------ESTO NO CORRESPONDE--------------------------------------------------------------------->                    
+ 
+                     <hr></hr>
+ 
+
+                    <div class="text-center">
+                    <button type="submit" id="submit" onclick="audio.play() & DescargaPDF();" class="btn btn-success btn_print"><i class="fa fa-print" aria-hidden="true"></i> PDF</button>
+                    </div>   
+
+                    <div style="color: #2C3E50; text-align: center;">
+                        <p><b>LA CONSULTA DE RECEPCIÓN DEL FORMULARIO DEBE REALIZARSE 24 HORAS POSTERIORES A SU ENVÍO, EN VIRTUD QUE ES EL TIEMPO QUE EL SISTEMA REQUIERE PARA LA ACTUALIZACIÓN DE LA INFORMACIÓN.</b></p> 
+                            <br><br>
+                    </div>
+
+
+</div>
+
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------Filtrar datos------------------------------------------------------------>
+    <script>
+    function filter() {
+        var keyword = document.getElementById("search").value;
+        var fleet = document.getElementById("opciones");
+        for (var i = 0; i < fleet.length; i++) {
+            var txt = fleet.options[i].text;
+            if (txt.substring(0, keyword.length).toLowerCase() !== keyword.toLowerCase() && keyword.trim() !== "") {
+                fleet.options[i].style.display = 'none';
+            } else {
+                fleet.options[i].style.display = 'list-item';
+            }
+        }
+    }
+    </script>
+    
+
+<!---------------------------------------------Mascara de Entrada--------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script type="text/javascript">
+    $("#opciones1").mask("0000-00000-0000");
+    </script>
+
+
+<!--------------------------------------------Mayuscula-------------------------------------------->
+<script>
+function mayus(e) {
+e.value = e.value.toUpperCase();
+}
+ </script>
+
+
+
+<!---------------------------------------------Audio con Click--------------------------------------------->
+<script>
+    const audio = new Audio();
+    audio.src = "./Click.mp3";
+    audio.volume = 0.2
+</script>
+
+<!--------------------------------------------Cambiar Input-------------------------------------------->
+    <script>
+        function seleccionado(){
+              var opt = $('#Nacionalidad').val();
+              
+             // alert(opt);
+              if(opt=="DPI"){
+                  $('#GUATE').show();
+                  $('#EXTRAN').hide();
+                  $('#EXTRANDOM').hide();
+              }else{
+                  if(opt=="PASAPORTE"){
+                      $('#GUATE').hide();
+                      $('#EXTRAN').show();
+                      $('#EXTRANDOM').hide();
+                  }else{
+                      $('#GUATE').hide();
+                      $('#EXTRAN').hide();
+                      $('#EXTRANDOM').show();
+                  }
+              }
+          }
+        </script>
+        
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+<script>
+function validarSolo(){
+ val = document.getElementById("dpi").value;
+
+ if( val != "" ) {
+    Swal.fire({
+              type: 'success',
+              titleText: '¡Busqueda Éxitosa!',
+              confirmButtonColor: '#20B2AA',
+              confirmButtonText: 'OK',
+              allowEscapeKey: true,
+              html: '¡SU FORMULARIO FUE RECIBIDO CON ÉXITO, GRACIAS POR REALIZAR LA CONSULTA!'
+              });
+              
+              ($("#myAlert").find("div#myAlert2").length==0)
+                $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'> <b>De encontrarse algún inconveniente con la información ingresada, se le estará notificando a la brevera posible.</b></div>");
+                $("#myAlert").css("display", "");
+
+ }else{
+    Swal.fire({
+              type: 'error',
+              titleText: '¡Error de Búsqueda!',
+              confirmButtonColor: '#20B2AA',
+              confirmButtonText: 'OK',
+              allowEscapeKey: true,
+              html: ("<br><div>Verifique que el número de identificación ingresado sea correcto </div><br> <div><b style='color: rgb(255, 0, 0); text-align: justify;'>Advertencia: </b> Si el error persiste es porque no ha llenado correctamente el Formulario Electrónico de Recopilación de Datos del Personal del Ministerio de Salud Pública Y Asistencia Social.</div> <br> <div>Para llenar el Formulario seleccione el siguiente enlace</div>") + '<a href="https://www.mspasgt.ml/"><b>https://www.mspasgt.ml/</b></a>'
+              });
+
+              ($("#myAlert").find("div#myAlert2").length==0)
+                $("#myAlert").append("<div class='alert alert-danger alert-dismissable' id='myAlert2'><b>El número que ingresó no existe en la base de datos.</b></div>");
+                $("#myAlert").css("display", "");
+ }
+}
+</script>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+<script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+
+
+</body>
+</html>
